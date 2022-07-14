@@ -1,7 +1,3 @@
-# FastAPI尝试
+# 使用nginx-proxy在同一端口多开服务
 
-```sh
-pip3 install -r requirements.txt
-
-uvicorn main:app --reload
-```
+<https://github.com/nginx-proxy/nginx-proxy>
