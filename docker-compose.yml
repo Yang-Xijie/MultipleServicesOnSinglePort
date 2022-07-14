@@ -1,4 +1,5 @@
-version: '2'
+version: "2"
+name: "MultipleServicesOnSinglePort"
 
 services:
   nginx-proxy:
@@ -12,6 +13,7 @@ services:
     build:
       context: ./service0
       dockerfile: Dockerfile
+    image: service0:v1
     expose:
       - "80"
     environment:
@@ -22,6 +24,7 @@ services:
     build:
       context: ./service1
       dockerfile: Dockerfile
+    image: service1:v1
     expose:
       - "80"
     environment:
